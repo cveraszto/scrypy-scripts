@@ -26,19 +26,20 @@ Python 3.8+
 ### Setup
 Enable USB Debugging on all Android devices
 Connect devices via USB
-Verify detection:
+Verify detection: 
+```bash 
 adb devices
-
+```
 You should see a list of connected devices.
 
 ### Usage
 
-Enable script with chmod +x if necessary.
-Run scripts. 
+Enable script(s) with chmod +x if necessary.
+Run script. 
 
 ### Description
 
-The scripts all do the same: 
+The scripts all do the same (in Windows / OSX / Linux): 
 - They loop through all connected devices 
     - They will keep the devices from sleeping while the script is active, and will adjust screen brightness to 255.
     - They check for device resolution and and start a cropped scrypy window or fall back to full screen. 
@@ -59,9 +60,9 @@ The scripts all do the same:
 
 Device not showing:
 
-adb kill-server
-adb start-server
-adb devices
+- adb kill-server
+- adb start-server
+- adb devices
 
 ### Author
 
