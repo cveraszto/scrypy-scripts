@@ -1,8 +1,9 @@
 ## Scrcpy Multi-Device USB scripts
 
-Simple utilities for managing and controlling multiple Android devices over USB using scrcpy and ADB.
+Simple scripts for managing scrypy window of devices (phones, tablets) over USB.
+Cropping is optimised for ichessone App running to just show the board. Scaling should be unticked in the App to avoid the jumping of the board. 
 
-Contents
+## Contents
 
 This repository includes one script for 3 environments: # scrypy-scripts
 ```bash
@@ -16,10 +17,10 @@ scrcpy_multi_usb_devices_linux.sh
 ```
 
 ### Requirements
+Make sure your devices have developer mode activated. 
 Make sure the following are installed:
 
 scrcpy
-Android Debug Bridge
 Python 3.8+
 
 ### Setup
@@ -37,6 +38,12 @@ Run scripts.
 
 ### Description
 
+The scripts all do the same: 
+- They loop through all connected devices 
+    - They will keep the devices from sleeping while the script is active, and will adjust screen brightness to 255.
+    - They check for device resolution and and start a cropped scrypy window or fall back to full screen. 
+    - FPS 30 and no-control, so you can only observe.
+- You can stop the script and all scrypy connection with the kill switch CTRL + C. 
 
 
 ### Project Structure
