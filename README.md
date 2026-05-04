@@ -35,8 +35,11 @@ You should see a list of connected devices.
 ### Usage
 
 - Enable script(s) with ``` chmod +x ``` if necessary.
-- Run script: ```./scrcpy_multi_usb_devices_linux.sh ```
+- Run script: ```./scrcpy_multi_usb_devices_linux.sh ```<br>
+
+
 Or:
+
 - Pick persistent setup ``` Set-ExecutionPolicy RemoteSigned -Scope CurrentUser ``` (One-time setup. Windows marks downloaded files with a “from internet” flag.)
 - Pick temporary override: ``` powershell -ExecutionPolicy Bypass -File script.ps1 ``` (Ignores restrictions only for a single run.)
 - Run script: ``` .\scrcpy_multi_usb_devices_crossplatform.ps1 ```
